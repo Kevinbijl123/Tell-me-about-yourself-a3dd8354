@@ -20,14 +20,10 @@
         <label for="pin">Telefoonnummer</label>
         <input type="text" id="name" name="required" minlength="4" maxlength="8" size="10">
 
-        <form>
             <label for="pin">Pin</label>
-            <input type="text" name="pin" pattern="[0-6]{4}" maxlength="3">
-            <input type="submit" value="bevestig">
-
-            <p><input type="submit" value="Verstuur"></p>
-
-            <select id=" Pet select">
+            <input type="password" name="pin" inputmode="numeric" pattern="[0-6]{4}" maxlength="9" size="8">
+            
+            <p><select id=" Pet select">
                 <option value=""></option>Kies een optie></option>
                 <option value="Noord Holland">Noord Holland</option>
                 <option value="Zuid Holland">Zuid Holland </option>
@@ -35,14 +31,21 @@
                 <option value="Gelderland">Gelderland</option>
                 <option value="Limburg">Limburg</option>
                 <option value="Zeeland">Zeeland</option>
+                <option value="Drenthe">Drenthe</option>
+                <option value="Flevoland">Flevoland</option>
+                <option value="Groningen">Groningen</option>
+                <option value="Overijssel">Overijssel</option>
                 <option value=""></option>
-            </select>
+            </select></p>
 
             <p>Hou je van Voetbal</p>
 
             <div> <input type="checkbox" id="nee" name="scales" checked>
             <label for="scales">ja</label>
             </div>
+            <div> <input type="checkbox" id="nee" name="scales"checked>
+            <label for="horns">nee</label>
+        </div>
             
             <p>Favoriete dagen van de week</p>
             <div>
@@ -73,9 +76,12 @@
                 <input type="checkbox" id="scales" name="scales" checked>
                 <label for="scales">zondag</label>
             </div>
-        </form>
+            <label for="story">opmerkingen</label>
 
+            <textarea name="story" id="story" cols="33" rows="5">
+            </textarea>
 
+            <p><input type="submit" value="Verstuur"></p>
     </body>
 
     </html>
