@@ -19,4 +19,20 @@ label {
     display: block;
     margin-bottom: 10px;
 }
+textarea:focus {
+    color: red
+}
+textarea:focus{
+    border-style: solid;
+    border-width: 10px;
+    border-color: red
+}
+textarea:active {
+    border-style: solid;
+    border-width: 15px;
+    border-color: green
+}
+textarea{
+    border:solid green
+}
 
